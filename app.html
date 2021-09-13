@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Estils css-->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora second try JS</h1>
+    <!--Contenedor-->
+    <div id="container">
+        <!--Pantalla de la calculadora-->
+        <div id="content-screen">
+            <span id="screen"></span>
+        </div>
+        <!--Contenedor de los botones-->
+        <div id="btn">
+
+            <button class="btn" value="C" onclick="resetear()">C</button>
+            <button class="btn" value="/" onclick="getOperation('/')">/</button>
+            <button class="btn" value="*" onclick="getOperation('*')">*</button>
+            <button class="btn" value="-" onclick="getOperation('-')">-</button>
+
+            <button value="7" onclick="print(7)">7</button>
+            <button value="8" onclick="print(8)">8</button>
+            <button value="9" onclick="print(9)">9</button>
+            <button class="mas btn" value="+" onclick="getOperation('+')">+</button>
+
+            <button value="4" onclick="print(4)">4</button>
+            <button value="5" onclick="print(5)">5</button>
+            <button value="6" onclick="print(6)">6</button>
+            
+            <button value="1" onclick="print(1)">1</button>
+            <button value="2" onclick="print(2)">2</button>
+            <button value="3" onclick="print(3)">3</button>
+            <button class="igual btn" value="=" onclick="getResult()">=</button>
+
+            <button class="cero" value="0" onclick="print(0)">0</button>
+            <button class="btn" value="." onclick="print('.')">.</button>
+        </div>
+    </div>
+    <!--Scripts-->
+    <script src="./app/app.js"></script>
+</body>
+</html>

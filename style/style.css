@@ -1,0 +1,76 @@
+/*Estilos generales*/
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Estilos contenedor*/
+#container{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+    background-image: linear-gradient(135deg, #ff7735 0, #ff6243 12.5%, #ff4a4d 25%, #ff3054 37.5%, #ed0c56 50%, #d10056 62.5%, #b70056 75%, #a00057 87.5%, #8c0058 100%);
+    border-radius: 5px;
+}
+/*Estilos titulo*/
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+/*estilos pantalla resultado*/
+#content-screen{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background: #2c1414;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    overflow: hidden;
+}
+#content-screen span{
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+}
+/*estilos botones*/
+#btn{
+    display: grid;
+    height: 79%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+#btn .cero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#btn .mas{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 4;
+}
+#btn .igual{
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 4;
+}
+#btn button{
+    border: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+}
+#btn .btn{
+    background: #2c1414;
+}
